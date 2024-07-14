@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=devive-width, initial-scale=1.0"/>
+    <title>Survey for fitpuzzle</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Survey for fitpuzzle</h1>
+      <p id="description">Thank you for spending time to help us improve the application</p>
+      <form id="survey-form" method="post" action="https://survey.fitpuzzle.org">
+        <fieldset id="personal-fielset">
+          <legend>Personal Information</legend>
+          <label id="name-label" for="name">Full name: <input id="name" name="name" type="text" placeholder="Enter your full name" required/></label>
+          <label id="email-label" class="question" for="email">Email: <input id="email" name="email" type="email" placeholder="Enter your email" required/></label>
+          <label id="phone-number-label" class="question" for="phone-number">Phone number: <input id="phone-number" name="phone-number" type="text" pattern="[0-9]{5,}" placeholder="Enter your phone number" reuired/></label>
+          <label id="number-label" for="number">Age: <input id="number" class="question" name="age" type="number" min="12" max="120" placeholder="Your age" required/></label>
+          <label id="gender-label" class="question" for="gender">Gender:
+            <select id="gender" name="gender">
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+              <option value="3">Rather not say</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset id="fitness-experience-fieldset">
+          <legend>Fitness Experience</legend>
+          <label id="fitness-goal-label" for"dropdown">What is your goal?
+            <select id="dropdown" name="fitness-goal" required>
+              <option value="">Select your option</option>
+              <option value="1">Keep balance</option>
+              <option value="2">Get stronger</option>
+              <option value="3">Lose fat</option>
+              <option value="4">Gain muscle</option>
+              <option value="5">Other</option>
+            </select>
+          </label>
+          <label id="fitness-level-label" class="question">What is your fitness level?
+            <label id="beginner-label" for="beginner"><input id="beginner" class="inline" name="fitness-level" type="radio" value="beginner" checked/> Beginner</label>
+            <label id="immediate-label" for="immediate"><input id="immediate" class="inline" name="fitness-level" type="radio" value="immediate"/> Immediate</label>
+            <label id="advanced-label" for="advanced"><input id="advanced" class="inline" name="fitness-level" type="radio" value="advanced"/> Advanced</label>
+            <label id="athlete-label" for="athlete"><input id="athlete" class="inline" name="fitness-level" type="radio" value="athlete"/> Athlete</label>
+          </label>
+          <label id="activity-label" for="activity" class="question">How often do you exercise?
+            <select id="activity" name="activity" required>
+              <option value="">Select your option</option>
+              <option value="1">Sedentary(office job)</option>
+              <option value="2">Light (1-2 days/week)</option>
+              <option value="3">Moderate (3-5 days/week)</option>
+              <option value="4">Heavy (6-7 days/week)</option>
+              <option value="5">Athlete (twice per day)</option>
+            </select>
+          </label>
+          <label id="invest-willingness-label" class="question">Are you willing to invest for your health and fitness?
+            <label id="of-course-label" for="of-course"><input id="of-course" class="inline" name="invest-willingness" type="radio" value="of-course" checked/> Of course</label>
+            <label id="never-label" for="never"><input id="never" class="inline" name="invest-willingness" type="radio" value="never"/> Never</label>
+            <label id="not-sure-label" for="not-sure"><input id="not-sure" class="inline" name="invest-willingness" type="radio" value="not-sure"/> Not sure</label>
+          </label>
+        </fieldset>
+        <fieldset id="fitness-apps-fieldset">
+          <legend>Fitness Application</legend>
+          <label id="fitness-apps-label">Have you used any fitness apps before? What?
+            <label id="none-label" for="none"><input id="none" class="inline" name="fitness-apps" type="checkbox" value="none"> I have <strong>never</strong> used any fitness apps before</label>
+            <label id="myfitnesspal-label" for="myfitnesspal"><input id="myfitnesspal" class="inline" name="fitness-apps" type="checkbox" value="myfitnesspal"> Myfitnesspal</label>
+            <label id="fitbit-label" for="fitbit"><input id="fitbit" class="inline" name="fitness-apps" type="checkbox" value="fitbit"> Fitbit</label>
+            <label id="burn.fit-label" for="burn.fit"><input id="burn.fit" class="inline" name="fitness-apps" type="checkbox" value="burn.fit"> Burn.fit</label>
+            <label id="fiton-label" for="fiton"><input id="fiton" class="inline" name="fitness-apps" type="checkbox" value="fiton"> FitOn</label>
+            <label id="fiton-label" for="ntc"><input id="ntc" class="inline" name="fitness-apps" type="checkbox" value="ntc"> Nike Training Club</label>
+            <label id="jefit-label" for="jefit"><input id="jefit" class="inline" name="fitness-apps" type="checkbox" value="jefit"> Jefit</label>
+            <label id="freeletics-label" for="freeletics"><input id="freeletics" class="inline" name="fitness-apps" type="checkbox" value="freeletics"> Freeletics</label>
+            <label id="wfw-label" for="wfw"><input id="wfw" class="inline" name="fitness-apps" type="checkbox" value="wfw"> Workout for Women</label>
+            <label id="caliber-label" for="caliber"><input id="caliber" class="inline" name="fitness-apps" type="checkbox" value="caliber"> Caliber</label>
+            <label id="fit-journal-label" for="fit-journal"><input id="fit-journal" class="inline" name="fitness-apps" type="checkbox" value="fit-journal"> Fit Journal</label>
+            <label id="other-label" for="other"><input id="other" class="inline" name="fitness-apps" type="checkbox" value="other"> Other</label>
+          </label>
+          <label id="fitpuzzle-label" class="question">Will you try <strong>fitpuzzle</strong>?
+            <label id="yes-label" for="yes"><input id="yes" class="inline" name="fitpuzzle-use" type="radio" value="yes" checked/> Yes</label>
+            <label id="no-label" for="no"><input id="no" class="inline" name="fitpuzzle-use" type="radio" value="no"/> No</label>
+          </label>
+          <label id="questions-suggestions-label" for="questions-suggestions" class="question">Any questions or suggestions?
+            <textarea id="questions-suggestions" name="questions-suggestions" rows="5" cols="30" placeholder="Enter your questions or suggestions here..."></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit"/>
+      </form>
+    </main>
+    <footer>
+      <p>Copyright by fitpuzzle</p>
+    </footer>
+  </body>
+</htm>

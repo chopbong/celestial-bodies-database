@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Tutorial</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,600,700|Source+Code+Pro|Inconsolata:700" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JavaScript Tutorial</header>
+      <ul id="nav-link-list">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#where_to">Where to</a></li>
+        <li><a class="nav-link" href="#hello_world">Hello World</a></li>
+        <li><a class="nav-link" href="#syntax">Syntax</a></li>
+        <li><a class="nav-link" href="#comment">Comment</a></li>
+        <li><a class="nav-link" href="#reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section id="home" class="main-section">
+        <header>Home</header>
+        <div id="JavaScript_home">
+          <p>
+            JavaScript is the world's most popular prgramming language.</br>
+            JavaScript is the prgramming language of the Web.</br>
+            JavaScript is easy to learn.</br>
+            <button id="learn_button"><a href="#introduction">Let jump to learning <strong>Javascript</strong> now</a></button>
+          </p>
+        </div>
+      </section>
+      <section id="introduction" class="main-section">
+        <header>Introduction</header>
+        <h2>Why Study JavaScript?</h2>
+        <p>JavaScript is one of the <strong>3 languages</strong> all web developer <strong>must</strong> learn:</p>
+        <ol>
+          <li><span class="web_programming_languages">HTML</span> to define the content of web pages</li>
+          <li><span class="web_programming_languages">CSS</span> to specify the layout of web pages</li>
+          <li><span class="web_programming_languages">JavaScript</span> to program the behavior of web pages</li>
+        </ol>
+        <h2>JavaScipt Can Change HTML Content</h2>
+        <p>
+          One of many JavaScript HTML methods is <span class="instructions">getElementById()</span>.</br>
+          The example below "finds" an HTML element (with id="selector"), and changes the element content (innerHTML) to "Hello JavaScript":</br>
+        </p>
+        <code>
+          document.getElementById("selector").innerHTML = "Hello JavaScript";
+        </code>
+        <h2>JavaScript Can Change HTML Styles (CSS)</h2>
+        <p>
+          Changing the style of an HTML element is a variant of changing an HTML attribute.</br>
+          The example below "finds" and HTML element (with id="selector"), and changes the font size to 35px:
+          </p>
+        <code>
+          document.getElementById("selector").style.fontSize = "35px";
+        </code>
+      </section>
+      <section id="where_to" class="main-section">
+        <header>Where to</header>
+        <h2>The &lt;script&gt; Tag</h2>
+        <p>In HTML, JavaScript code is inserted between <span class="instructions">&lt;script&gt;</span class="instructions"> and <span>&lt;/script&gt;</span> tags.</p>
+        <code>
+          &lt;script&gt;</br>
+          &emsp;document.getElementById("selector").innerHTML = "My First JavaScript";</br>
+          &lt;/script&gt;
+        </code>
+        <h2>Where to place JavaScript code</h2>
+        <p>JavaScript code can be placed in:</p>
+        <ul>
+          <li>In the <span class="instructions">&lt;head&gt;</span> section of an HTML document</li>
+          <li>In the <span class="instructions">&lt;body&gt;</span> section of an HTML document</li>
+          <li>In external files with the <strong>.js</strong> extension</li>
+        </ul>
+        <h2>External JavaScript Advantages</h2>
+        <p>Placing scripts in external files has some advantages:</p>
+        <ul>
+          <li>It separates HTML and code</li>
+          <li>It makes HTML and JavaScript easier to read and maintain</li>
+          <li>Cached JavaScript files can speed up page loads</li>
+        </ul>
+        <p>To add several script files to one HTML documetn - use several <span class="instructions">&lt;script&gt;</span> tags:</p>
+        <code>
+          &lt;script src="myScript1.js"&gt&lt;/script&gt;</br>
+          &lt;script src="myScript2.js"&gt&lt;/script&gt;
+        </code>
+      </section>
+      <section id="hello_world" class="main-section">
+        <header>Hello World</header>
+        <p>To get started with writing JavaScript, open the Notepad and write your first "Hello World" JavaScript:</p>
+        <code>
+          function greetMe(yourName) {</br>
+          &emsp;alert("Hello " + yourName);</br>
+          }</br></br>
+          greetMe("World");
+        </code>
+      </section>
+      <section id="syntax" class="main-section">
+        <header>Syntax</header>
+        <h2>JavaScript Values</h2>
+        <p>The JavaScript syntax defines two types of values:</p>
+        <ul>
+          <li>Fixed values, which called <strong>Literals</strong></li>
+          <li>Variable values, which called <strong>Variables</strong></li>
+        </ul>
+        <h2>JavaScript Literals</h2>
+        <p>The two most important syntax rules for fixed values are:</p>
+        <ol>
+          <li>
+            <strong>Numbers</strong> are written with or without decimals: 
+            <code>
+              10.49</br>
+              1990
+            </code>
+          </li>
+          <li><strong>Srings</strong> are text, written within double or single quotes: 
+            <code>
+              "Chris Bumstead"</br>
+              'Chris Bumstead'
+            </code>
+          </li>
+        </ol>
+        <h2>JavaScript Variables</h2>
+        <p>
+          In programming language, <strong>variables</strong> are used to <strong>strore</strong> data values.</br>
+          JavaScript uses the keywords <span class="instructions">var</span>, <span class="instructions">let</span> and <span class="instructions">const</span> to <strong>declare</strong> variables.</br>
+          An <strong>equal sign</strong> is used to <strong>assign values</strong> to variables.</br>
+          In this example, x is defined as a variables. Then, x is assigned (given) the value 6:
+        </p>
+        <code>
+          let x;</br>
+          x = 6;
+        </code>
+        <h2>JavaScript Operators</h2>
+        <p>JavaScript uses <strong>arithmetic operators</strong> ( <span class="instructions">+</span> <span class="instructions">-</span> <span class="instructions">*</span> <span class="instructions">/</span> ) to <strong>compute</strong> values:</p>
+        <code>
+          (17 + 6 / 2) * 10
+        </code>
+        <p>
+          JavaScript uses an <strong>assignment operator</strong> ( <span class="instructions">=</span> ) to <strong>assign</strong> values to variables:
+        </p>
+        <code>
+          let x, y, z;</br>
+          x = 5;</br>
+          y = 11;</br>
+          z = 9;
+        </code>
+        <h2>JavaScript Expressions</h2>
+        <p>
+          An expression is a combination of values, variables, and operators, which computes to a value.</br>
+          The computation is called evalution.</br>
+          For example, 10 * 6 evaluates to 60, x / 5 evaluates to 8 (x is assigned the value of 40), "Chris" + " " + "Bumstead" evaluates to "Chris Bumstead":
+        </p>
+        <code>
+          10 * 6;</br>
+          let x;</br>
+          x = 40;</br>
+          x / 5;<br>
+          "Chris + " " + "Bumstead";
+        </code>
+        <h2>JavaScript Keywords</h2>
+        <p>
+          JavaSCript <strong>keywords</strong> are used to identify actions to be performs.</br>
+          The <span class="instructions">let</span> keyword tells the browser to creat a variables:
+        </p>
+        <code>
+          let x, y;</br>
+          x = 10 + 2;</br>
+          y = x / 3;
+        </code>
+        <h2>JavaScript Identifiers / Names</h2>
+        <p>
+          Indentifiers are JavaScript names, are used to name variables, keywords, and functions.</br>
+          The rules for legal names are the same in most programming languages. A JavaScript name must begin with:
+        </p>
+        <ul>
+          <li>A letter (A-Z or a-z)</li>
+          <li>A dollar sign ($)</li>
+          <li>An underscore (_)</li>
+        </ul>
+        <p>
+          Subsequent characters may be letters, digits, underscore, or dollar signs.</br>
+          <strong>Numbers</strong> are <strong>not allowed</strong> as the first character in names. This way JavaScript can easily distinguish indentifiers from numbers.</br>
+          <strong>Hyphens</strong> (-) are <strong>not allowed</strong> in JavaScript names. They are reserved for subtractions.
+        </p>
+        <h2>JavaScript is Case Sensitive</h2>
+        <p>
+          All JavaScipt indentifiers are <strong>case sensitive</strong>.</br>
+          The variables <span class="instructions">lastName</span>, <span class="instructions">lastname</span> and <span class="instructions">LastName</span>, are three different variables.</br>
+          JavaScript does not interpret <strong>LET</strong> or <strong>Let</strong> as the keyword <span class="instructions">let</span>.</br>
+          Moreover, JavaScript programmers tend to use <strong>Camel Case</strong> (that starts with a lowercase letter) to join multiple words into one variable name:
+        </p>
+        <code>
+          let studentName, masterCard, isDigit;
+        </code>  
+      </section>
+      <section id="comment" class="main-section">
+        <header>Comment</header>
+        <h2>Are all JavaScript statements executed?</h2>
+        <p>
+          Not all JavaScript statements are executed.</br>
+          Code after double slashes <span class="instructions">//</span> or between <span class="instructions">/*</span> and <span class="instructions">*/</span> is treated as <strong>comment</strong>.</br>
+          Comments are ignored, and will not be executed.</br>
+          JavaScript comments can be used to explain JavaScript code, and make it more readable.</br>
+          JavaScript comments can also be used to prevent execution, when testing alternative code.
+        </p>
+        <h2>Single Line Comments</h2>
+        <p>
+          Single line comments start with <span class="instructions">//</span>.</br>
+          Any text between <span class="instructions">//</span> and the end of the line will be ignore by JavaScript (will not be executed).</br>
+          This example uses a single-line comment before the first code line and another at the end of the second code line to explain the code:
+        </p>
+        <code>
+          // Change heading:</br>
+          document.getElementById("myHeading").innerHTML = "My First Heading";</br></br>
+
+          let x = 10; // Declare x, give it the value of 5;
+        </code>
+        <h2>Multi-line Comments</h2>
+        <p>
+          Multi-line comments start with <span class="instructions">/*</span> and end with <span class="instructions">*/</span>.</br>
+          Any text between <span class="instructions">/*</span> and <span class="instructions">*/</span> will be ignored by JavaScript.</br>
+          This example uses multi-line comment (a comment block) to explain the code:
+        </p>
+        <code>
+          /*</br>
+          The code below will change</br>
+          the heading with id = "myHeading"</br>
+          and the paragraph with id = "myParagraph"</br>
+          in my web page:</br>
+          */</br>
+          document.getElementById("myHeading").innerHTML = "My First Heading";</br>
+          document.getElementById("myParagraph").innerHTML = "My first paragraph.";
+        </code>
+        <h2>Using Comments to Prevent Execution</h2>
+        <p>
+          Using comments to prevent execution of code is suitable for code testing.</br>
+          Adding <span class="instructions">//</span> in front of a code line changes the code lines from an executable line to a comment.</br>
+          This example uses <span class="instructions">*/</span> to prevent execution of one of the code lines: 
+        </p>
+        <code>
+          // document.getElementById("myHeading").innerHTML = "My First Heading";</br>
+          document.getElementById("myParagraph").innerHTML = "My first paragraph.";
+        </code>
+        <p>
+          This example uses a comment block (<span class="instructions">/*</span> and <span class="instructions">*/</span>) to prevent execution of mutiple code lines:
+        </p>
+        <code>
+          /*</br>
+          document.getElementById("myHeading").innerHTML = "My First Heading";</br>
+          document.getElementById("myParagraph").innerHTML = "My first paragraph.";</br>
+          /*
+        </code>
+      </section>
+      <section id="reference" class="main-section">
+        <header>Reference</header>
+        <p>All the documentation in this page is taken form <a id="reference-link" href="https://www.w3schools.com/js/default.asp" target="_blank">W3Schools - JavaScript Tutorial</a>.</p>
+      </section>
+    </main>
+  </body>
+</html>

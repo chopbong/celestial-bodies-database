@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herculift</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Young+Serif|Joti+One|Judson|Palanquin+Dark|Mirza|Cormorant+Infant|Black+Han+Sans" />
+    <script src="https://kit.fontawesome.com/23cc2cc7c7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div id="brand">
+        <h1 id="brand-name"><a href="#home">hercu<span class="yellow-text">lift</span></a></h1>
+        <img id="header-img" src="https://placeit-assets1.s3-accelerate.amazonaws.com/custom-pages/fitness-logo-maker/fitness-logo-template-with-an-abstract-energetic-human-illustration-2457a-1024x1024.png" alt="herculift logo" />
+      </div>
+      <nav id="nav-bar">
+        <ul id="nav-links-list">
+          <li>
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#features">Features</a>
+          <li>
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="home" class="main-section">
+        <div class="home-image">
+          <img src="https://img.freepik.com/free-photo/athletic-man-running-outdoor-park_23-2148196853.jpg?t=st=1710930537~exp=1710934137~hmac=5bcec540a966b8590e6780697d01bfd12513d23f2e62ecaf6c685e425b952cd0&w=1060" alt="A young man practicing sport outdoor" />
+        </div>
+        <div class="home-content">
+          <div class="form-box">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+              <h2 class="form-title">REGISTER FOR FREE</h2>
+              <input id="first-name" name="first-name" type="text" placeholder="First Name*" required />
+              <input id="last-name" name="last-name" type="text" placeholder="Last Name*" required />
+              <input id="email" name="email" type="email" placeholder="Email Address*" required />
+              <input id="phone" name="phone" type="tel" pattern="[0-9]{8,}" placeholder="Phone Number"/>
+              <input id="age" name="age" type="number" min="12" max="100" placeholder="Age" />
+              <select id="referrer" name="referrer" required>
+                <option value="">How did you first hear about herculift?</option>
+                <option value="1">Search engine (Google, Yahoo, etc.)</option>
+                <option value="2">Social media</option>
+                <option value="3">Recommended by friend or colleague</option>
+                <option value="4">Other</option>
+              </select>
+              <label for="notify">
+                <input id="notify" name="notify" type="checkbox" checked /> Receive email notifications about service information
+              </label>
+              <input id="submit" name="subtmit" type="submit" value="REGISTER NOW" />
+            </form>
+          </div>
+          <div class="introduction">
+            <div class="vertical-line"></div>
+            <h2 class="introduction-title">BE <span class="yellow">STRONG</span> TOGETHER</h2>
+            <p>
+              <span class="inline">hercu<span class="blue">lift</span></span> will accompany you on your scientific, enjoyable and motivating fitness journey as a partner, not just an app.<br />
+            </p>
+            <div class="horizontal-line"></div>
+          </div>
+        </div>
+      </section>
+      <section id="features" class="main-section">
+        <div class="section-mark">
+          <div class="rect"></div>
+          <div class="triangle"></div>
+          <header class="section-title">FEATURES</header>
+        </div>
+        <div class="features-content">
+          <div class="feature">
+            <i class="fa-solid fa-clipboard-list feature-icon"></i>
+            <div class="feature-text">
+              <h2 class="feature-title">Progress Tracking</h2>
+              <p class="feature-detail">Our tracking and analytics tools are optimized for accuracy, convenience, and personalization. This will help promote your training process to quickly achieve the desired results.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <i class="fa-solid fa-trophy feature-icon"></i>
+            <div class="feature-text">
+              <h2 class="feature-title">Gamified Training</h2>
+              <p class="feature-detail">We apply gamification such as ranking systems, challenges, rewards and punishments to your physical training process. This will help you feel more excited and motivated when exercising.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <i class="fa-solid fa-people-group feature-icon"></i>
+            <div class="feature-text">
+              <h2 class="feature-title">Community Connection</h2>
+              <p class="feature-detail">You can share your experience, knowledge or even your training schedule through our community service. You can also add friends, message, and use the duo training feature with like-minded people.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <i class="fa-solid fa-book-open feature-icon"></i>
+            <div class="feature-text">
+              <h2 class="feature-title">Fitness Education</h2>
+              <p class="feature-detail">Periodically, we will provide short lectures on science-based physical training. There are also advanced courses on various fitness topics that you can purchase or redeem with earned <strong>HercuPoints</strong>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-box">
+          <iframe id="video" src="https://gemoo.com/tools/upload-video/share/629116417397342208?codeId=M07A4j4pkLVKN&card=629116413639245824" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </section>
+      <section id="pricing" class="main-section">
+        <div class="section-mark">
+          <div class="rect"></div>
+          <div class="triangle"></div>
+          <header class="section-title">PRICING</header>
+        </div>
+        <div class="pricing-content">
+          <div class="price-box">
+            <div id="basic" class="price-content">
+              <h2 class="price-title">Free</h2>
+              <h3 class="price"><span class="price-number">$0</span></h3>
+              <div class="price-detail">
+                <p>GET THE BASIC SERVICES</p>
+                <ul class="price-feature">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Progress tracking tools
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Gamification & Community
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Limited analytical insights
+                  </li>
+                </ul>
+              </div>
+              <div class="purchase-button"><a href="#home">Get basic for free</a></div>
+            </div>
+          </div>
+          <div class="price-box">
+            <div id="month" class="price-content">
+              <h2 class="price-title">Monthly Premium</h2>
+              <h3 class="price">
+                <span class="price-number">$4.99</span><span class="price-time">/mo</span>
+                <span class="recommend">POPULAR</span>
+              </h3>
+              <div class="price-detail">
+                <p>GET THE LIMITED SERVICES</p>
+                <ul class="price-feature">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Advanced analytical insights
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    1-On-1 coaching
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Extra HercuPoints
+                  </li>
+                </ul>
+              </div>
+              <div class="purchase-button"><a href="#home">Request Access</a></div>
+            </div>
+          </div>
+          <div class="price-box">
+            <div id="year" class="price-content">
+              <h2 class="price-title">Annually Ultimate</h2>
+              <h3 class="price">
+                <span class="price-number">$44.99</span><span class="price-time">/yr</span>
+                <p class="price-subtitle">25% OFF</p>
+              </h3>
+              <div class="price-detail">
+                <p>GET EVERY SERVICES</p>
+                <ul class="price-feature">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Valuable rewarded challenges
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Group coaching
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Extra fitness courses
+                  </li>
+                </ul>
+              </div>
+              <div class="purchase-button"><a href="#home">Request access</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="main-section">
+        <div class="more-info">
+          <h2>More About Company</h2>
+          <div><p><a href="#home"><strong>herculift</strong></a> is a company providing technology solutions applied to the field of fitness and health targeting all customers worldwide.</p>
+            <span class="author">- ChopBong, CEO</span></div>
+        </div>
+        <div class="keep-connected">
+          <h2>Keep Connected</h2>
+          <div>
+            <div class="icon-link">
+              <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="color:#0f91f3"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin" style="color:#0a66c2"></i></a>
+              <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" style="color:#ff0000"></i></a>
+              <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter" style="color:#00abed"></i></a>
+            </div>
+            <div class="text-link">
+              <a href="https://www.facebook.com/" target="_blank">Follow us on Facebook</a>
+              <a href="https://www.linkedin.com/" target="_blank">Follow us on LinkedIn</a>
+              <a href="https://www.youtube.com/" target="_blank">Follow us on Youtube</a>
+              <a href="https://twitter.com/" target="_blank">Foollow us on Twitte</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          <div>
+            <div class="address">
+              <i class="fa-solid fa-house"></i>
+              <p>1, St. Dai Co Viet, Hai Ba Trung, Ha Noi, Vietnam</p>
+            </div>
+            <div class="phone-contact">
+              <i class="fa-solid fa-phone"></i>
+              <p>+84 123 456 789</p>
+            </div>
+            <div class="email-contact">
+              <i class="fa-solid fa-envelope"></i>
+              <p>herculift@healtech.org.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="copyright">
+          <i class="fa-regular fa-copyright"></i>
+          <p>2024 - No Copyright | Designed by <span style="color:#e8eef1">ChopBong</span></p>
+        </div>
+        <div class="legacy">
+          <a href="#home">Company Information</a>
+          <a href="#home">Privacy Policy</a>
+          <a href="#home">Terms & Conditions</a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

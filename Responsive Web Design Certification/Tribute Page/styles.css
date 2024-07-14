@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  width: 100%;
+  background-color: #e7e8e9;
+  margin: 25px 20px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+#title {
+  font-size: 3rem;
+  color: #212121;
+  margin: 0;
+}
+
+#subtitle {
+  margin: 5px 0 30px 0;
+  font-size: 1.2rem;
+}
+
+#img-div {
+  width: 100%;
+  background-color: #f5f6f7;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+#img-caption {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+#tribute-info {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+h2, #more-info {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 30px 0; 
+}
+
+section, blockquote {
+  margin: 20px 0 0 0;
+  padding: 0 225px;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #222222;
+}
+
+ul {
+  margin: 5px 0 0 0;
+  padding: 0 25px;
+}
+
+li {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #444444;
+  list-style: circle;
+  margin-bottom: 0.5rem;
+}
+
+.milestones {
+  font-weight: 700;
+}
+
+blockquote {
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #444444;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+#author {
+  display: block;
+  padding-right: 30px;
+  padding-top: 5px;
+  text-align: right;
+}
+
+#more-info > p > a {
+  color: #444444;
+}
+
+#more-info > p > a:hover {
+  color: #444444;
+}
+
+#more-info > p > a:active {
+  color: #444444;
+}
+
+#more-info > p > a:visited {
+  color: #444444;
+}

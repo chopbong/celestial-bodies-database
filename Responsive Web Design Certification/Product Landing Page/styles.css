@@ -1,0 +1,998 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+:root {
+    --navbar-height: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #e8eef1;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    width: 100%;
+    height: var(--navbar-height);
+    background-color: #1e3d58;
+    color: #f5f6f7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 4vw 0 0;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+#brand {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#header-img {
+    margin-top: 18px;
+    height: 100px;
+}
+
+#brand-name {
+    font-family: "Young Serif", sans-serif;
+    font-size: 2.75rem;
+    font-weight: 900;
+    margin-left: -25px;
+}
+
+#brand-name a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.yellow-text {
+    color: #ffb600
+}
+
+#nav-links-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5vw;
+} 
+
+#nav-links-list li {
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Young Serif", serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.nav-link:hover {
+    color: #ffb600;
+    font-weight: 700;
+}
+
+#video {
+    width: 800px;
+    height: 450px;
+}
+
+#main {
+    margin: 0;
+    padding: 0;
+}
+
+.main-section {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    font-family: "Palanquin Dark", serif;
+}
+
+p {
+    font-family: "Judson", serif;
+    font-size: 1.6rem;
+}
+
+#home {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #0594fe;
+}
+
+#home::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: var(--navbar-height);
+}
+
+.home-image {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    height: calc(100% - var(--navbar-height));
+    width: 70%;
+    overflow: hidden;
+}
+
+.home-image > img {
+    height: 100%;
+    width: 100%;
+    float: left;
+    margin-left: -14vw;
+    object-fit: cover;
+}
+
+.home-content {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: calc(100% - var(--navbar-height));
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 56fr 44fr;
+    align-items: center;
+    column-gap: 0;
+    z-index: 1;
+
+}
+
+.introduction {
+    grid-column: 2 / 3;
+    height: 100%;
+    padding: 100px 30px 60px 40px;
+}
+
+.introduction-title {
+    font-family: "Joti One", serif;
+    font-size: 6.5rem;
+    color: #f5f6f7;
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: 0.3rem;
+}
+
+.introduction p {
+    font-size: 2.7rem;
+    color: #f5f6f7;
+    text-align: justify;
+    margin-top: 50px;
+    line-height: 1.5;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    text-indent: 2rem;
+}
+
+.inline {
+    background-color: #ffb600;
+    color: #f5f6f7;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.yellow {
+    color: #ffb600;
+}
+
+.blue {
+    color: #0594fe;
+}
+
+.vertical-line {
+    height: 13rem;
+    width: 2rem;
+    background-color: #ffb600;
+    border-radius: 2px;
+    float: left;
+    margin-top: 1.4rem;
+    margin-right: 2rem;
+}
+
+.horizontal-line {
+    height: 1.2rem;
+    width: 18rem;
+    background-color: #ffb600;
+    border-radius: 10px;
+    float: right;
+    margin-top: -1rem;
+}
+
+.form-box {
+    grid-column: 1 / 2;
+}
+
+#form {
+    background-color: #e8eef1;
+    width: 100%;
+    max-width: 400px;
+    height: 450px;
+    padding: 25px;
+    border-radius: 15px;
+    float: right;
+    margin-right: 15%;
+    box-shadow: 2px 2px 4px 0px #221f19;
+}
+
+.form-title {
+    font-family: "Palanquin Dark", serif;
+    font-size: 2.3rem;
+    font-weight: 900;
+    margin: 5px 0 15px 0;
+}
+
+input, select {
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-color: #c6cfda;
+    font-family:  "Recursive", sans-serif;
+    font-size: 1.5rem;
+    padding-left: 15px;
+    color: #000;
+}
+
+#first-name, #last-name, #email, select {
+    width: 100%;
+}
+
+#phone {
+    width: 70%;
+    margin-right: 13px;
+}
+
+#age {
+    float: right;
+    width: calc(30% - 13px);
+}
+
+#notify {
+    display: inline;
+    width: unset;
+    margin: -0.2rem 0.5rem 0 0;
+    vertical-align: middle;
+}
+
+label {
+    font-size: 1.4rem;
+}
+
+#submit {
+    display: block;
+    width: 45%;
+    margin: 15px auto 0px auto;
+    padding: 0;
+    font-family: "Palanquin Dark", serif;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #f5f6f7;
+    background-color: #ef523f;
+}
+
+#submit:hover {
+    background-color: #ef2626;
+}
+
+input::placeholder, select {
+    font-family:  "Recursive", sans-serif;
+    font-size: 1.5rem;
+}
+
+input::placeholder, option[value=""]  {
+    color: #757575;
+}
+
+input[type="checkbox"] {
+    accent-color: #057dcd;
+}
+
+option:not([value=""]) {
+    color: #000;
+}
+
+.main-section:not([id="home"]) {
+    padding: 80px 0px 0 0px;
+    margin: -50px 0 0 0;
+}
+
+.section-mark {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.section-mark > .rect {
+    display: block;
+    width: 6rem;
+    height: 3.6rem;
+    background-color: #1e3d58;
+}
+
+.section-mark > .triangle {
+    box-sizing: c;
+    display: block;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-left: 2.4rem solid #1e3d58;
+    border-top: 1.8rem solid transparent;
+    border-bottom: 1.8rem solid transparent;
+}
+
+.section-title {
+    font-weight: 500;
+    font-size: 2.6rem;
+    margin-left: 1rem;
+}
+
+.features-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 4rem;
+    padding: 0px 10vw;
+    margin: 50px 0;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    align-items: center;
+    justify-items: center;
+    gap: 3rem;
+}
+
+.feature-icon {
+    font-size: 8.5rem;
+}
+
+i.fa-clipboard-list {
+    color: #f74a49;
+}
+
+i.fa-trophy {
+    color: #ff8c00;
+}
+
+i.fa-people-group {
+    color: #057dcd;
+}
+
+i.fa-book-open {
+    color: #72b043;
+}
+
+.feature-title {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.feature-detail {
+    font-size: 2rem;
+    text-align: justify;
+    margin: 1rem 0 0 0;
+}
+
+.video-box {
+    background-color: #6a8e8f;
+    width: 100%;
+    height: auto;
+    max-height: 100vw;
+    padding: 20px;
+    overflow: auto;
+}
+
+#features > .video-box > iframe {
+    display: block;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    transform: scale(1);
+    transform-origin: 0 0;
+}
+
+.pricing-content {
+    padding: 0 5vw;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4vw;
+}
+
+.price-box {
+    display: block;
+    width: 250px;
+    height: 350px;
+    border: 2px solid transparent;
+    border-radius: 13px;
+}
+
+.price-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 0px #969697;
+    padding: 10px 10px;
+    margin: 0;
+}
+
+#basic {
+    border-top: 10px solid #ffa600;
+}
+
+#month {
+    border-top: 10px solid #f74a49;
+
+}
+
+#year {
+    border-top: 10px solid #057dcd;
+
+}
+
+.price-box:hover {
+    border: 2px solid #516cf1;
+}
+
+h2.price-title {
+    font-family: "Palanquin Dark", serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.price {
+    width: 100%;
+    padding-top: 1rem;
+    height: 10rem;
+    text-align: center;
+}
+
+.price > .price-number {
+    font-family: "Black Han Sans", serif;
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.price > .price-time {
+    font-family: "Cormorant Infant", sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+}
+
+.price > .recommend {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    background-color: #e77433;
+    border-radius: 7px;
+    color: #e8eef1;
+    font-family: "Mirza", serif;
+    font-size: 1.8rem;
+    padding-bottom: 0.4rem;
+    font-weight: 700;
+}
+
+.price > .price-subtitle {
+    display: block;
+    margin: -0.4rem auto;
+    color: #ff0022;
+    font-family: "Mirza", serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.price-detail > p {
+    text-align: center;
+    margin: 0;
+}
+
+.price-detail > .price-feature {
+    list-style-type: none;
+    padding: 0 0 0 3rem;
+    margin-top: 0.5;
+}
+
+.price-detail > .price-feature > li {
+    font-size: 1.1rem;
+}
+
+.price-detail > .price-feature > li > i {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    color: #61bf60;
+}
+
+.purchase-button > a{
+    display: block;
+    width: 90%;
+    height: 3.5rem;
+    border: 2px #516cf1 solid;
+    border-radius: 4px;
+    margin: 3rem auto;
+    text-align: center;
+    line-height: 2.8rem;
+    text-decoration: none;
+    font-family: "Palanquin Dark", serif;
+    font-size: 1.7rem;
+    background-color: #e8eef1;
+    color: #516cf1;
+}
+
+.purchase-button > a:hover {
+    border: 2px solid #e8eef1;
+    background-color: #516cf1;
+    color: #e8eef1;
+}
+
+#contact {
+    width: 100%;
+    background-color: #282828;
+    margin: 30px 0 0 0;
+    padding: 30px 5vw 40px 5vw;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.2fr;
+    column-gap: 125px;
+    align-items: start;
+}
+
+#contact h2 {
+    color: #e8eef1;
+    font-size: 2rem;
+}
+
+.more-info, .keep-connected, .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+}
+
+#contact i {
+    color: #e8eef1;
+    font-size: 2.5rem;
+}
+
+#contact p, #contact a, .author {
+    color: #fff4a3;
+    margin: 0;
+    font-size: 1.6rem;
+    text-align: justify;
+    line-height: 3rem;
+    text-decoration: none;
+}
+
+.author {
+    margin-top: 1rem;
+    float: right;
+}
+
+#contact .keep-connected > div {
+    display: grid;
+    grid-template-columns: 10fr 90fr;
+}
+
+.icon-link, .text-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+
+}
+
+.icon-link {
+    margin-left: -1rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.text-link {
+    margin-left: 3rem;
+    align-items: flex-start;
+}
+
+#contact .contact-info > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+
+.address, .phone-contact, .email-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+#footer {
+    width: 100%;
+    padding: 5px 1vw;
+    background-color: #221e1d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #808080;
+    font-size: 1.6rem;
+    align-items: center;
+    overflow: hidden;    
+}
+
+.copyright {
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.legacy {
+    margin-right: 0 3rem 0 0;
+}
+
+.legacy > a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 2rem;
+    border-left: 1px solid #808080;
+}
+
+.legacy > a:first-of-type {
+    border-left: none;
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1300px) {
+    .introduction-title {
+        font-size: 5.5rem;
+    }
+
+    .vertical-line {
+        margin-top: 0.5rem;
+    }
+
+    .introduction p {
+        font-size: 2.3rem;
+    }
+
+    #contact {
+        column-gap: 5rem;
+    }
+}
+
+@media only screen and (min-width: 860px) and (max-width: 1050px) {
+    #home {
+        background-image: url(https://img.freepik.com/free-photo/athletic-man-running-outdoor-park_23-2148196853.jpg?t=st=1710930537~exp=1710934137~hmac=5bcec540a966b8590e6780697d01bfd12513d23f2e62ecaf6c685e425b952cd0&w=1060);
+    }
+
+    .home-image {
+        display: none;
+    }
+    
+    .home-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .introduction {
+        padding-left: 50px;
+    }
+
+    .introduction-title {
+        font-size: 5.3rem;
+    }
+
+    .vertical-line {
+        margin-top: -0.1rem;
+    }
+
+    .introduction p {
+        font-size: 2.1rem;
+    }
+
+    .blue {
+        color: #8db4c7;
+    }
+
+    #form {
+        margin-right: -2vw;
+    }
+
+    .feature-title {
+        font-size: 2.3rem;
+    }
+
+    .feature-detail {
+        font-size: 1.6rem;
+    }
+
+    .feature-icon {
+        font-size: 7.5rem;
+    }
+
+    #contact {
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .more-info, .keep-connected, .contact-info {
+        gap: 0.5rem;
+    }
+    
+    .more-info {
+        grid-area: 1 / 1 / 2 / 3;
+        padding: 0 15rem;
+    }
+
+    .keep-connected {
+        grid-area: 2 / 1 / 3 / 2;
+        padding-left: 5rem;
+    }
+
+    .contact-info {
+        grid-area: 2 / 2 / 3 / 3;
+        padding-right: 5rem;
+    }
+
+    #footer .legacy a {
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 860px) {
+    #home {
+        background-image: url(https://img.freepik.com/free-photo/athletic-man-running-outdoor-park_23-2148196853.jpg?t=st=1710930537~exp=1710934137~hmac=5bcec540a966b8590e6780697d01bfd12513d23f2e62ecaf6c685e425b952cd0&w=1060);
+        height: 88vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .home-image {
+        display: none;
+    }
+    
+    .home-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .introduction {
+        position: absolute;
+        padding: 30px 0 0 0;
+        margin: 0;
+        width: 100%;
+        border: 3px solid wheat;
+    }
+
+    .introduction-title {
+        text-align: center;
+        font-size: 5.3rem;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    .horizontal-line {
+        display: none;
+    }
+
+    .introduction p {
+        position: absolute;
+        bottom: 0;
+        font-size: 2rem;
+        margin-top: 0;
+        padding: 10px;
+        text-indent: unset;
+        text-align: center;
+    }
+
+    .blue {
+        color: #91a74e;
+    }
+
+    .form-box {
+        margin: 0 0 120px 0; 
+        padding: 0;
+    }
+
+    #form {
+        margin: 0;
+    }
+
+    .feature-title {
+        font-size: 2.3rem;
+    }
+
+    .feature-detail {
+        font-size: 1.6rem;
+    }
+
+    .feature-icon {
+        font-size: 7.5rem;
+    }
+
+    #contact {
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .more-info, .keep-connected, .contact-info {
+        gap: 0.5rem;
+    }
+    
+    .more-info {
+        grid-area: 1 / 1 / 2 / 3;
+        padding: 0 15rem;
+    }
+
+    .keep-connected {
+        grid-area: 2 / 1 / 3 / 2;
+        padding-left: 0;
+    }
+
+    .contact-info {
+        grid-area: 2 / 2 / 3 / 3;
+        padding-right: 0;
+    }
+    
+    #footer {
+        flex-direction: column-reverse;
+        padding: 20px 0 10px 0;
+    }
+
+    #footer .legacy a {
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #header-img {
+        margin-left: -2.5rem;
+    }
+
+    #nav-links-list {
+        gap: 1rem;
+    }
+
+    .nav-link {
+        font-size: 1.6rem;
+    }
+
+    #home {
+        background-image: url(https://img.freepik.com/free-photo/athletic-man-running-outdoor-park_23-2148196853.jpg?t=st=1710930537~exp=1710934137~hmac=5bcec540a966b8590e6780697d01bfd12513d23f2e62ecaf6c685e425b952cd0&w=1060);
+        height: 88vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .home-image {
+        display: none;
+    }
+    
+    .home-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .introduction {
+        position: absolute;
+        padding: 32px 0 0 0;
+        margin: 0;
+        width: 100%;
+        border: 3px solid wheat;
+    }
+
+    .introduction-title {
+        text-align: center;
+        font-size: 3.8rem;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    .horizontal-line {
+        display: none;
+    }
+
+    .introduction p {
+        position: absolute;
+        bottom: 0;
+        font-size: 1.8rem;
+        margin-top: 0;
+        padding: 10px;
+        text-indent: unset;
+        text-align: center;
+    }
+
+    .blue {
+        color: #91a74e;
+    }
+
+    .form-box {
+        margin: 0 0 125px 0; 
+        padding: 0;
+    }
+
+    #form {
+        margin: 0;
+    }
+
+    .features-content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .feature-title {
+        font-size: 2rem;
+    }
+
+    .feature-detail {
+        font-size: 1.4rem;
+    }
+
+    .feature-icon {
+        font-size: 7rem;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .more-info, .keep-connected, .contact-info {
+        gap: 0;
+        padding: 0 6rem;
+        align-items: center;
+    }
+    
+    #footer {
+        flex-direction: column-reverse;
+        padding: 20px 0 10px 0;
+    }
+
+    #footer .legacy a {
+        padding: 0 1rem;
+    }
+}
